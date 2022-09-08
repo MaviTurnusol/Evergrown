@@ -1,0 +1,9 @@
+D:\Godod\Evergrown\.mono\temp\bin\Debug\Evergrown.dll
+D:\Godod\Evergrown\.mono\temp\bin\Debug\Evergrown.pdb
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.csproj.AssemblyReference.cache
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.AssemblyInfoInputs.cache
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.AssemblyInfo.cs
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.csproj.CoreCompileInputs.cache
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.dll
+D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.pdb
