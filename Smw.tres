@@ -1,6 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=2]
+[gd_resource type="TileSet" load_steps=4 format=2]
 
 [ext_resource path="res://SNES - Super Mario World - Tileset.png" type="Texture" id=1]
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( 0.5625, 1.66406, 1.9375, 0.289063, 13.8125, 0.226563, 15.375, 1.72656, 15.8125, 13.7266, 14.1875, 15.8516, 2.25, 15.9141, 0.25, 14.2266 )
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 16, 16, 0.0858765, 16, 0, 0, 16, 0 )
@@ -13,6 +16,7 @@ points = PoolVector2Array( 16, 16, 0.0858765, 16, 0, 0, 16, 0 )
 0/region = Rect2( 257, 97, 16, 16 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
+0/occluder = SubResource( 2 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -27,3 +31,17 @@ points = PoolVector2Array( 16, 16, 0.0858765, 16, 0, 0, 16, 0 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
+1/name = "SNES - Super Mario World - Tileset.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 132, 409, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0

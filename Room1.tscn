@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Smw.tres" type="TileSet" id=1]
+[ext_resource path="res://Backgroung.tscn" type="PackedScene" id=2]
 
 [node name="Room1" type="TileMap"]
 tile_set = ExtResource( 1 )
@@ -9,3 +10,8 @@ cell_quadrant_size = 4
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 1769524, 0, 0, 1769531, 0, 0, 1835060, 0, 0, 1835067, 0, 0, 1900596, 0, 0, 1900603, 0, 0, 1966132, 0, 0, 1966139, 0, 0, 2031678, 0, 0, 2097202, 0, 0, 2097213, 0, 0, 2097214, 0, 0, 2162738, 0, 0, 2162749, 0, 0, 2228274, 0, 0, 2228275, 0, 0, 2228284, 0, 0, 2228285, 0, 0, 2293811, 0, 0, 2293812, 0, 0, 2293813, 0, 0, 2293814, 0, 0, 2293819, 0, 0, 2293820, 0, 0, 2359350, 0, 0, 2359351, 0, 0, 2359352, 0, 0, 2359353, 0, 0, 2359354, 0, 0, 2359355, 0, 0 )
+
+[node name="Backgroung" parent="." instance=ExtResource( 2 )]
+show_behind_parent = true
+position = Vector2( 512, 300 )
+scale = Vector2( 8, 4.687 )

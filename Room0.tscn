@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Smw.tres" type="TileSet" id=1]
+[ext_resource path="res://background.png" type="Texture" id=2]
 
 [node name="Room0" type="TileMap"]
 tile_set = ExtResource( 1 )
@@ -9,3 +10,9 @@ cell_quadrant_size = 4
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 1572919, 0, 0, 1572924, 0, 0, 1638455, 0, 0, 1638460, 0, 0, 1703996, 0, 0, 1769532, 0, 0, 1769533, 0, 0, 1966137, 0, 0, 1966138, 0, 0, 2031672, 0, 0, 2031673, 0, 0, 2031674, 0, 0, 2031675, 0, 0, 2031676, 0, 0, 2097207, 0, 0, 2097212, 0, 0, 2097213, 0, 0, 2162742, 0, 0, 2162743, 0, 0, 2162749, 0, 0, 2162750, 0, 0, 2228278, 0, 0, 2228286, 0, 0, 2293822, 0, 0, 2359358, 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 512, 300 )
+scale = Vector2( 8, 4.6875 )
+texture = ExtResource( 2 )
