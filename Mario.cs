@@ -11,16 +11,16 @@ public class Mario : KinematicBody2D
     {
         velocity = new Vector2();
 
-        if (Input.IsActionPressed("right"))
+        if (Input.IsKeyPressed((int)KeyList.D))
             velocity.x += 1;
 
-        if (Input.IsActionPressed("left"))
+        if (Input.IsKeyPressed((int)KeyList.A))
             velocity.x -= 1;
 
-        if (Input.IsActionPressed("down"))
+        if (Input.IsKeyPressed((int)KeyList.S))
             velocity.y += 1;
 
-        if (Input.IsActionPressed("up"))
+        if (Input.IsKeyPressed((int)KeyList.W))
             velocity.y -= 1;
 
         velocity = velocity.Normalized() * speed;

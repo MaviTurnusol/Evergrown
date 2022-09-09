@@ -7,3 +7,11 @@ D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.AssemblyInfo.cs
 D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.csproj.CoreCompileInputs.cache
 D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.dll
 D:\Godod\Evergrown\.mono\temp\obj\Debug\Evergrown.pdb
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\bin\Debug\Evergrown.dll
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\bin\Debug\Evergrown.pdb
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\obj\Debug\Evergrown.csprojAssemblyReference.cache
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\obj\Debug\Evergrown.AssemblyInfoInputs.cache
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\obj\Debug\Evergrown.AssemblyInfo.cs
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\obj\Debug\Evergrown.csproj.CoreCompileInputs.cache
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\obj\Debug\Evergrown.dll
+C:\Users\Mert\OneDrive\Belgeler\GitHub\Evergrown\.mono\temp\obj\Debug\Evergrown.pdb
