@@ -32,4 +32,5 @@ public class Player : KinematicBody2D
         velocity = MoveAndSlide(velocity);
     }
 
+    // deneme yorum
 }
