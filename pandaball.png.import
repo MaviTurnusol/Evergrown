@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite-0001-Sheet.png-48ee13a826b207b468b4bd94a41083df.stex"
+path="res://.import/pandaball.png-2b66fe1821187ce11e838a976a73cc4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprite-0001-Sheet.png"
-dest_files=[ "res://.import/Sprite-0001-Sheet.png-48ee13a826b207b468b4bd94a41083df.stex" ]
+source_file="res://pandaball.png"
+dest_files=[ "res://.import/pandaball.png-2b66fe1821187ce11e838a976a73cc4c.stex" ]
 
 [params]
 
@@ -24,7 +24,7 @@ flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
