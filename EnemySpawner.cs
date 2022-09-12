@@ -29,7 +29,7 @@ public class EnemySpawner : Node2D
         int a = rng.RandiRange(0, 4);
 
         enemy1.Position = new Vector2(500*a, 300*a);
-        AddChild(enemy1);
+        GD.Print("I hate niggers");
         sex = false;
         }
     }

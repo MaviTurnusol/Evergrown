@@ -3,9 +3,9 @@ using System;
 
 public class BossBullet : Node2D
 {
-    float speed = 400;
+    public static float speed = 50;
 
-    public float range = 400;
+    public float range = 100;
 
     private float distancetravelled = 0;
 
