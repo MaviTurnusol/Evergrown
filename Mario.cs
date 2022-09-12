@@ -26,6 +26,8 @@ public class Mario : KinematicBody2D
             velocity.y -= 1;
 
         velocity = velocity.Normalized() * speed;
+
+        Rotation = (GetGlobalMousePosition() - GlobalPosition).Angle();
     }
 
     public override void _PhysicsProcess(float delta)
@@ -45,42 +47,25 @@ public class Mario : KinematicBody2D
     {        
         base._UnhandledInput(@event);
         
-            if (@event is InputEventKey arrows)
+            if (@event is InputEventMouseButton mouseButton)
             {
-                if (arrows.Pressed && arrows.Scancode == (int)KeyList.Right)
+                if (mouseButton.ButtonIndex == (int)ButtonList.Left && mouseButton.Pressed)
                 {
                     Bullet bullet = (Bullet)Bulletscene.Instance();
                     bullet.Position = Position;
-                    bullet.RotationDegrees = 0;
+                    bullet.Rotation = Rotation;
                     GetParent().AddChild(bullet);
                     GetTree().SetInputAsHandled();
                 }
-                if (arrows.Pressed && arrows.Scancode == (int)KeyList.Left)
+                if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed)
                 {
-                    Bullet bullet = (Bullet)Bulletscene.Instance();
-                    bullet.Position = Position;
-                    bullet.RotationDegrees = 180;
-                    GetParent().AddChild(bullet);
-                    GetTree().SetInputAsHandled();
+                GetGlobalMousePosition();
+               
+                Position = new Vector2(GetGlobalMousePosition());
                 }
-                if (arrows.Pressed && arrows.Scancode == (int)KeyList.Up)
-                {
-                    Bullet bullet = (Bullet)Bulletscene.Instance();
-                    bullet.Position = Position;
-                    bullet.RotationDegrees = -90;
-                    GetParent().AddChild(bullet);
-                    GetTree().SetInputAsHandled();
-                }
-                if (arrows.Pressed && arrows.Scancode == (int)KeyList.Down)
-                {
-                    Bullet bullet = (Bullet)Bulletscene.Instance();
-                    bullet.Position = Position;
-                    bullet.RotationDegrees = 90;
-                    GetParent().AddChild(bullet);
-                    GetTree().SetInputAsHandled();
-                }
+
             }
-        
+
 
     }
 
