@@ -7,9 +7,9 @@ public class Mario : KinematicBody2D
 
     [Export] public int speed = 200;
 
-    [Export] public int dashspeed = 300;
-
     public Vector2 velocity = new Vector2();
+
+    public static bool dash;
 
     public void GetInput()
     {
@@ -44,8 +44,16 @@ public class Mario : KinematicBody2D
     {
         Bulletscene = GD.Load<PackedScene>("res://Bullet.tscn");
 
+        Timer timer = this.GetNode<Timer>("Timer");
+        timer.WaitTime = 1;
+        timer.Connect("timeout", this, "on_timeout");
+        timer.Start();
     }
-    
+
+    public static void on_timeout()
+    {
+        dash = true;
+    }
 
     public override void _UnhandledInput(InputEvent @event)
     {
@@ -61,11 +69,11 @@ public class Mario : KinematicBody2D
                 GetParent().AddChild(bullet);
                 GetTree().SetInputAsHandled();
             }
-            if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed)
+            if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed && dash)
             {
                 Vector2 moveDirection = (GetGlobalMousePosition() - Position).Normalized();
-               // float moveamount =  * dashspeed;
-                Position += moveDirection * dashspeed;
+                Position += moveDirection * 200;
+                dash = false;
             }
         }
 
