@@ -7,6 +7,8 @@ public class Mario : KinematicBody2D
 
     [Export] public int speed = 200;
 
+    [Export] public int dashspeed = 300;
+
     public Vector2 velocity = new Vector2();
 
     public void GetInput()
@@ -28,45 +30,44 @@ public class Mario : KinematicBody2D
         velocity = velocity.Normalized() * speed;
 
         Rotation = (GetGlobalMousePosition() - GlobalPosition).Angle();
+
     }
 
     public override void _PhysicsProcess(float delta)
     {
-        GetInput(); 
+        GetInput();
         velocity = MoveAndSlide(velocity);
     }
+    
 
     public override void _Ready()
     {
         Bulletscene = GD.Load<PackedScene>("res://Bullet.tscn");
 
     }
-
+    
 
     public override void _UnhandledInput(InputEvent @event)
-    {        
+    {
         base._UnhandledInput(@event);
-        
-            if (@event is InputEventMouseButton mouseButton)
+
+        if (@event is InputEventMouseButton mouseButton)
+        {
+            if (mouseButton.ButtonIndex == (int)ButtonList.Left && mouseButton.Pressed)
             {
-                if (mouseButton.ButtonIndex == (int)ButtonList.Left && mouseButton.Pressed)
-                {
-                    Bullet bullet = (Bullet)Bulletscene.Instance();
-                    bullet.Position = Position;
-                    bullet.Rotation = Rotation;
-                    GetParent().AddChild(bullet);
-                    GetTree().SetInputAsHandled();
-                }
-                if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed)
-                {
-                GetGlobalMousePosition();
-               
-                Position = new Vector2(GetGlobalMousePosition());
-                }
-
+                Bullet bullet = (Bullet)Bulletscene.Instance();
+                bullet.Position = Position;
+                bullet.Rotation = Rotation;
+                GetParent().AddChild(bullet);
+                GetTree().SetInputAsHandled();
             }
-
+            if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed)
+            {
+                Vector2 moveDirection = (GetGlobalMousePosition() - Position).Normalized();
+               // float moveamount =  * dashspeed;
+                Position += moveDirection * dashspeed;
+            }
+        }
 
     }
-
 }

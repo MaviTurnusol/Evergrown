@@ -8,7 +8,7 @@ public class RoomGen : Node2D
     // private string b = "text";
 
     //RNG
-      static string[] list = {"res://Room0.tscn", "res://Room1.tscn"};
+      static string[] list = {"res://Room0.tscn", "res://Room1.tscn", "res://Room2.tscn", "res://Room3.tscn"};
       static int lengt = list.Length;
       
     PackedScene rums;
@@ -20,21 +20,21 @@ public class RoomGen : Node2D
         // Randomizer
         var roomrng = new RandomNumberGenerator();
         roomrng.Randomize();
-        int a = roomrng.RandiRange(0, 1);
+        int a = roomrng.RandiRange(0, 3);
         rums = (PackedScene)GD.Load(list[a]);
 
         TileMap rmSpawn = (TileMap)rums.Instance();
-        Vector2 rmPos = new Vector2(0, 600*i);
+        Vector2 rmPos = new Vector2(0, 1200*i);
         rmSpawn.Position = rmPos;
           
           for(int n = 0; n < 4; n++)
           {
             roomrng.Randomize();
-            a = roomrng.RandiRange(0, 1);
+            a = roomrng.RandiRange(0, 3);
             rums = (PackedScene)GD.Load(list[a]);
 
             rmSpawn = (TileMap)rums.Instance();
-            rmPos.x = n * 1024;
+            rmPos.x = n * 2048;
             rmSpawn.Position = rmPos;
             AddChild(rmSpawn);
           }
