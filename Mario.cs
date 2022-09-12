@@ -72,7 +72,7 @@ public class Mario : KinematicBody2D
             if (mouseButton.ButtonIndex == (int)ButtonList.Right && mouseButton.Pressed && dash)
             {
                 Vector2 moveDirection = (GetGlobalMousePosition() - Position).Normalized();
-                Position += moveDirection * 200;
+                Position += moveDirection * 250;
                 dash = false;
             }
         }
