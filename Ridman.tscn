@@ -28,6 +28,7 @@ animations = [ {
 extents = Vector2( 4.25, 9.25 )
 
 [node name="Ridman" type="KinematicBody2D"]
+collision_layer = 2
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]

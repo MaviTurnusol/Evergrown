@@ -31,12 +31,12 @@ public class Ridman : KinematicBody2D
         {
                 for(int n = 0; n < 8; n++)
                 {
-                    Vector2 posy = new Vector2(Position.x+(n+10),  Position.y+(n+10));
                     BossBullet = (PackedScene)GD.Load("res://BossBullet.tscn");
                     Node2D bulot = (Node2D)BossBullet.Instance();
-                    bulot.Position = posy;
+                    bulot.Position = Position;
                     bulot.RotationDegrees = n*45;
                     AddChild(bulot);
+                    GD.Print("ates ettim");
                 }
             sex = false;
         }
