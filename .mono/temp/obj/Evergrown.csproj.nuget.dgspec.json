@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Evergrown\\Evergrown.csproj": {}
+    "D:\\Godod\\Evergrown\\Evergrown.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Evergrown\\Evergrown.csproj": {
+    "D:\\Godod\\Evergrown\\Evergrown.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Evergrown\\Evergrown.csproj",
+        "projectUniqueName": "D:\\Godod\\Evergrown\\Evergrown.csproj",
         "projectName": "Evergrown",
-        "projectPath": "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Evergrown\\Evergrown.csproj",
-        "packagesPath": "C:\\Users\\Mert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mert\\OneDrive\\Belgeler\\GitHub\\Evergrown\\.mono\\temp\\obj\\",
+        "projectPath": "D:\\Godod\\Evergrown\\Evergrown.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "D:\\Godod\\Evergrown\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +39,7 @@
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

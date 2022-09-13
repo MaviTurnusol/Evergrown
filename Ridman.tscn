@@ -34,7 +34,6 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )
 animation = "pand"
-frame = 1
 speed_scale = 0.5
 playing = true
 
@@ -43,3 +42,7 @@ position = Vector2( 0.75, -0.25 )
 shape = SubResource( 4 )
 
 [node name="attackTimer" type="Timer" parent="."]
+
+[node name="attackTimer2" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true

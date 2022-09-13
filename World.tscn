@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Mario.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ridman.tscn" type="PackedScene" id=2]
 [ext_resource path="res://RoomGen.cs" type="Script" id=3]
-[ext_resource path="res://EnemySpawner.cs" type="Script" id=4]
 
 [node name="World" type="Node2D"]
 
@@ -14,11 +13,6 @@ script = ExtResource( 3 )
 position = Vector2( 400, 300 )
 collision_mask = 8
 speed = 400
-
-[node name="EnemySpawner" type="Node2D" parent="."]
-script = ExtResource( 4 )
-
-[node name="Timer" type="Timer" parent="EnemySpawner"]
 
 [node name="Ridman" parent="." instance=ExtResource( 2 )]
 position = Vector2( 576, 406 )

@@ -15,6 +15,7 @@ public class Ridman : KinematicBody2D
     static Vector2 dis = new Vector2();
     static int speed = 0;
     public static Vector2 pluer;
+    static int sex2 = 0;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
@@ -68,7 +69,7 @@ public class Ridman : KinematicBody2D
                     dis = -dis.Normalized() * speed;
                 }
                 sex = false;
-            }
+            } 
 
         }
         dis = MoveAndSlide(dis);

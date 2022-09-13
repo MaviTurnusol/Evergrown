@@ -24,7 +24,7 @@ public class BossBullet : Node2D
         distancetravelled += moveAmount;
         if (distancetravelled>range)
         {
-            QueueFree();
+            
         }
     }
 
