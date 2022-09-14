@@ -11,6 +11,10 @@ public class Mario : KinematicBody2D
 
     public static bool dash;
 
+    public float health = 10;
+
+
+
     public void GetInput()
     {
         velocity = new Vector2();
@@ -37,6 +41,12 @@ public class Mario : KinematicBody2D
     {
         GetInput();
         velocity = MoveAndSlide(velocity);
+
+        if (health <= 0)
+        {
+            QueueFree();
+        }
+
     }
     
 

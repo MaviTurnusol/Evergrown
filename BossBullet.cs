@@ -5,7 +5,7 @@ public class BossBullet : Node2D
 {
     public static float speed = 50;
 
-    public float range = 100;
+    public float range = 200;
 
     private float distancetravelled = 0;
 
@@ -24,13 +24,17 @@ public class BossBullet : Node2D
         distancetravelled += moveAmount;
         if (distancetravelled>range)
         {
-            
+            QueueFree();
         }
     }
 
-    public void Oncollision(Node with)
+    public void Oncollision(Area2D with)
     {
-       // with.GetParent<Ridman>().Damage(1);
-        QueueFree();
+        if (with.GetParent() is Mario mario)
+        {
+            mario.health -= 5;
+            QueueFree();
+              
+        }
     }
 }
