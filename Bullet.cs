@@ -4,9 +4,9 @@ using System;
 public class Bullet : Node2D
 {
     
-    float speed = 800;
+    float speed = 1000;
 
-    public float range = 600;
+    public float range = 800;
 
     private float distancetravelled = 0;
 
